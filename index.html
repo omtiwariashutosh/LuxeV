@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Home</title>
+    <title>Elegant Product Store</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Font: EB Garamond -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a2d0b5df99.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="d-flex justify-content-between align-items-center px-4 py-3 bg-light position-relative">
-        <div class="logo fw-bold fs-4">🛒 MyShop</div>
-        <div class="search-bar flex-grow-1 mx-4">
-            <input type="text" class="form-control" placeholder="Search products..." />
+    <header class="custom-header d-flex align-items-center justify-content-between px-4 py-3">
+        <!-- Logo -->
+        <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-store fs-3 text-primary"></i>
+            <span class="fs-4 fw-bold">ShopEase</span>
         </div>
-        <div class="menu-icon" id="openMenu">
+
+        <!-- Search -->
+        <div class="search-box d-flex align-items-center">
+            <i class="fas fa-search text-muted ms-3"></i>
+            <input type="text" placeholder="Search for products..." class="form-control" />
+        </div>
+
+        <!-- Menu Icon -->
+        <div class="menu-toggle" id="openMenu">
             <i class="fas fa-bars fs-2"></i>
         </div>
     </header>
 
-    <!-- Fullscreen Nav -->
+    <!-- Fullscreen Menu -->
     <div id="fullscreenNav" class="fullscreen-nav">
         <div class="close-icon" id="closeMenu">
             <i class="fas fa-times"></i>
@@ -40,53 +49,24 @@
             <div class="nav-links p-5">
                 <a href="#">Home</a>
                 <a href="#">Products</a>
-                <a href="#">About</a>
+                <a href="#">Offers</a>
                 <a href="#">Contact</a>
             </div>
-            <div class="nav-image flex-grow-1 p-5 d-none d-md-block">
-                <img src="https://via.placeholder.com/400x400" class="img-fluid rounded" alt="Menu Image" />
+            <div class="nav-image flex-grow-1 p-4 d-none d-md-block">
+                <img src="https://via.placeholder.com/400x400" class="img-fluid rounded" alt="Menu Image">
             </div>
         </div>
     </div>
 
-    <!-- Product Section -->
+    <!-- Optional Product Section -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Our Products</h2>
         <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1" />
-                    <div class="card-body">
-                        <h5 class="card-title">Product One</h5>
-                        <p class="card-text">Amazing product description goes here.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2" />
-                    <div class="card-body">
-                        <h5 class="card-title">Product Two</h5>
-                        <p class="card-text">Amazing product description goes here.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3" />
-                    <div class="card-body">
-                        <h5 class="card-title">Product Three</h5>
-                        <p class="card-text">Amazing product description goes here.</p>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Add your 3 products here -->
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
