@@ -9,3 +9,16 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   fullscreenNav.classList.remove("active");
 });
+// ****************************
+const navLinks = document.querySelectorAll(".nav-links a");
+const imageBg = document.querySelector(".nav-image-bg");
+
+navLinks.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    imageBg.style.transform = "scale(1.1)";
+  });
+
+  link.addEventListener("mouseleave", () => {
+    imageBg.style.transform = "scale(1)";
+  });
+});
