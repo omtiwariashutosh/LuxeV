@@ -14,6 +14,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a2d0b5df99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -24,15 +27,16 @@
     <header class="custom-header d-flex align-items-center justify-content-between px-4 py-3">
         <!-- Logo -->
         <div class="d-flex align-items-center gap-2">
-            <i class="fas fa-store fs-3 text-primary"></i>
-            <span class="fs-4 fw-bold">ShopEase</span>
+            <!-- <i class="fas fa-store fs-3 text-primary"></i> -->
+            <span class="fs-4 fw-bold">Luxe<span>V</span></span>
         </div>
 
-        <!-- Search -->
-        <div class="search-box d-flex align-items-center">
-            <i class="fas fa-search text-muted ms-3"></i>
-            <input type="text" placeholder="Search for products..." class="form-control" />
+        <!-- Search Box -->
+        <div class="search-container ms-3">
+            <input type="text" placeholder="Search for products..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
+
 
         <!-- Menu Icon -->
         <div class="menu-toggle" id="openMenu">
@@ -42,6 +46,10 @@
 
     <!-- Fullscreen Menu -->
     <div id="fullscreenNav" class="fullscreen-nav">
+        <div class="d-flex align-items-center gap-2">
+            <!-- <i class="fas fa-store fs-3 text-primary"></i> -->
+            <span class="fs-4 fw-bold">Luxe<span>V</span></span>
+        </div>
         <div class="close-icon" id="closeMenu">
             <i class="fas fa-times"></i>
         </div>
@@ -49,11 +57,11 @@
             <div class="nav-links p-5">
                 <a href="#">Home</a>
                 <a href="#">Products</a>
-                <a href="#">Offers</a>
+                <a href="#">Premium</a>
                 <a href="#">Contact</a>
             </div>
             <div class="nav-image flex-grow-1 p-4 d-none d-md-block">
-                <img src="https://via.placeholder.com/400x400" class="img-fluid rounded" alt="Menu Image">
+                <img src="images/portfolio4.3.jpg" class="img-fluid rounded" alt="Menu Image">
             </div>
         </div>
     </div>
