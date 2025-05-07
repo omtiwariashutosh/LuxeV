@@ -12,8 +12,6 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a2d0b5df99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,65 +23,72 @@
 
     <!-- Header -->
     <header class="custom-header d-flex align-items-center justify-content-between px-5 py-3">
-        <!-- Logo with Premium Icon -->
         <div class="d-flex align-items-center gap-2">
-            <!-- <i class="fas fa-crown text-warning fs-4"></i> -->
-            <span class="fs-3 fw-bold">Luxe<span>V</span></span>
+            <span class="logo fs-3 fw-bold">Luxe<span>V</span></span>
         </div>
-
-        <!-- Search Box -->
         <div class="search-container ms-3">
             <input type="text" placeholder="Search for products..." class="search-input">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
-
-        <!-- Menu Icon -->
         <div class="menu-toggle d-flex align-items-center gap-2">
             <i class="fas fa-gem fs-3 text-warning"></i>
-            <span class="text-uppercase fw-semibold d-none d-md-inline"></span>
             <i class="fas fa-outdent fs-3 text-dark" id="openMenu" style="cursor: pointer;"></i>
         </div>
-
     </header>
 
-
+    <!-- Fullscreen Navigation -->
     <div id="fullscreenNav" class="fullscreen-nav">
         <div class="d-flex justify-content-between align-items-center px-4 pt-4">
-            <!-- Premium Logo -->
             <div class="d-flex align-items-center gap-2">
                 <i class="fas fa-crown text-dark fs-4"></i>
                 <span class="fs-4 fw-bold">Luxe<span>V</span></span>
             </div>
-            <!-- Close Icon -->
             <div class="close-icon" id="closeMenu">
                 <i class="fas fa-times fs-4"></i>
             </div>
         </div>
 
         <div class="nav-content d-flex flex-column flex-md-row">
-            <!-- Left side: Nav links -->
             <div class="nav-links p-5 w-100 w-md-50">
-                <a href="#" class="nav-hover"><i class="fas fa-home me-2"></i><span class="nav-text">Home</span></a>
-                <a href="#" class="nav-hover"><i class="fas fa-box me-2"></i><span class="nav-text">Products</span></a>
-                <a href="#" class="nav-hover"><i class="fas fa-gem me-2"></i><span class="nav-text">Premium</span></a>
-                <a href="#" class="nav-hover"><i class="fas fa-envelope me-2"></i><span
-                        class="nav-text">Contact</span></a>
+                <a href="#" class="nav-hover"><i class="fas fa-home me-2"></i>Home</a>
+                <a href="#" class="nav-hover"><i class="fas fa-box me-2"></i>Products</a>
+                <a href="#" class="nav-hover"><i class="fas fa-gem me-2"></i>Premium</a>
+                <a href="#" class="nav-hover"><i class="fas fa-envelope me-2"></i>Contact</a>
             </div>
-
-            <!-- Right side: Fixed container with zoomable image -->
             <div class="nav-image-container d-none d-md-block w-100 w-md-50">
-                <div class="nav-image-bg" id="navImageBg"></div>
+                <div class="nav-image-bg"></div>
             </div>
         </div>
     </div>
 
-
-
-    <!-- Optional Product Section -->
+    <!-- Products -->
     <section class="container my-5">
-        <h2 class="text-center mb-4">Our Products</h2>
+        <h2 class="text-center mb-4 section-title">Our Products</h2>
         <div class="row g-4">
-            <!-- Add your 3 products here -->
+            <div class="col-md-4">
+                <div class="product-card p-3 shadow-sm text-center">
+                    <img src="images/pro3.jpg" alt="Product 1" class="img-fluid mb-3">
+                    <h5 class="product-title">Elegant Watch</h5>
+                    <p class="product-price">$149.99</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card p-3 shadow-sm text-center">
+                    <img src="images/pro1.jpg" alt="Product 2" class="img-fluid mb-3">
+                    <h5 class="product-title">Luxury Perfume</h5>
+                    <p class="product-price">$89.99</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card p-3 shadow-sm text-center">
+                    <img src="images/pro4.jpg" alt="Product 3" class="img-fluid mb-3">
+                    <h5 class="product-title">Designer Handbag</h5>
+                    <p class="product-price">$249.99</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
         </div>
     </section>
 
